@@ -6,7 +6,7 @@ const ContentItem = ({ number, image, title, subtitle, description, reverse = fa
     <div className={`absolute text-[100px] sm:text-[140px] md:text-[180px] lg:text-[400px] xl:text-[450px] font-medium text-light-blue-manual opacity-20 ${reverse ? 'left-0 lg:left-40' : 'right-0 lg:right-48'} top-[-5%] lg:top-1/2 transform -translate-y-1/2 z-0 tracking-tight`}>
       {number.padStart(2, '0')}
     </div>
-    <div className="w-full lg:w-fit z-10">
+    <div className="w-full lg:w-1/2 z-10">
       <Image
         src={image}
         alt={title}
