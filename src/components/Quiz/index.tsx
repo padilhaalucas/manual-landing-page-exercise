@@ -18,7 +18,7 @@ const Quiz: React.FC = () => {
     isRejected
   } = useQuiz();
 
-  const modalRef = useRef<HTMLDialogElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const Quiz: React.FC = () => {
         ${showQuiz ? 'visible bg-black bg-opacity-50' : 'invisible bg-black bg-opacity-0'}
       `}
     >
-      <dialog
+      <div
         data-testid="quiz-modal"
         ref={modalRef}
         className={`
@@ -179,7 +179,7 @@ const Quiz: React.FC = () => {
             )}
           </div>
         )}
-      </dialog>
+      </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ exports[`Components/Content should match snapshot 1`] = `
         01
       </div>
       <div
-        className="w-full lg:w-fit z-10"
+        className="w-full lg:w-1/2 z-10"
       >
         <img
           alt="Hair loss needn't be irreversible. We can help!"
@@ -64,7 +64,7 @@ exports[`Components/Content should match snapshot 1`] = `
         02
       </div>
       <div
-        className="w-full lg:w-fit z-10"
+        className="w-full lg:w-1/2 z-10"
       >
         <img
           alt="Erections can be a tricky thing. But no need to feel down!"
