@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 import { useQuiz } from '@/contexts/quiz.context';
 import quizData from '@/mocked-data-source/quiz.json';
@@ -20,24 +20,6 @@ const Quiz: React.FC = () => {
 
   const modalRef = useRef<HTMLDivElement>(null);
   const [fade, setFade] = useState(false);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-        closeQuiz();
-      }
-    };
-
-    if (showQuiz) {
-      document.addEventListener('mousedown', handleClickOutside);
-      document.body.style.overflow = 'hidden';
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.body.style.overflow = '';
-    };
-  }, [showQuiz]);
 
   const handleAnswer = (answer: string) => {
     setFade(true);
@@ -61,16 +43,34 @@ const Quiz: React.FC = () => {
     }
   };
 
-  const closeQuiz = () => {
+  const closeQuiz = useCallback(() => {
     setShowQuiz(false);
     setTimeout(() => {
       setQuizCompleted(false);
       setCurrentQuestion(0);
       setAnswers([]);
     }, 300);
-  };
+  }, [setShowQuiz, setQuizCompleted, setCurrentQuestion, setAnswers]);
 
   const question = quizData.questions[currentQuestion];
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        closeQuiz();
+      }
+    };
+
+    if (showQuiz) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.body.style.overflow = '';
+    };
+  }, [showQuiz, closeQuiz]);
 
   return (
     <div
