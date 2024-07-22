@@ -27,7 +27,7 @@ const Banner: React.FC = () => {
           Be good <br /> to yourself
         </h1>
         <p className="mb-8 sm:mb-10 md:mb-12 lg:mb-8 text-xl sm:text-lg text-dark-green-manual w-10/12 sm:w-5/6 md:w-4/5">
-          We're working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.
+          We&#39;re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.
         </p>
         <button
           className="bg-dark-red-manual text-white text-sm font-bold px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded hover:bg-opacity-90 transition-colors duration-300"
