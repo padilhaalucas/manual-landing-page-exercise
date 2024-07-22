@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Quiz should match snapshot 1`] = `
+<div
+  className="
+        fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 ease-in-out
+        visible bg-black bg-opacity-50
+      "
+  data-testid="quiz-container"
+>
+  <dialog
+    className="
+          bg-white rounded-lg shadow-xl w-full max-w-md overflow-x-hidden max-h-[40rem] transition-all duration-300 ease-in-out
+          opacity-100 scale-100 translate-y-0
+        "
+    data-testid="quiz-modal"
+  >
+    <div
+      className="bg-sage-green p-6 border-b border-b-gray-200 flex justify-between items-center"
+    >
+      <h2
+        className="text-2xl font-bold text-dark-green-manual"
+      >
+        Hair Loss Quiz
+      </h2>
+      <button
+        className="text-dark-green-manual"
+        onClick={[Function]}
+      >
+        <img
+          alt="Close Icon"
+          height={24}
+          src="/assets/close-icon.svg"
+          width={24}
+        />
+      </button>
+    </div>
+    <div
+      className="p-6"
+    >
+      <div
+        className="transition-opacity duration-300 ease-in-out opacity-100"
+      >
+        <h3
+          className="text-xl font-semibold mb-4 text-dark-green-manual"
+        >
+          Which image best matches your hair loss?
+        </h3>
+        <div
+          className="space-y-4"
+        >
+          <button
+            className="
+                      flex justify-center items-center w-full p-4 border border-gray-200 rounded-lg
+                      text-dark-green-manual hover:bg-sage-green-manual hover:border-dark-green-manual transition-all duration-300
+                    "
+            onClick={[Function]}
+          >
+            <div
+              className="flex flex-row"
+            >
+              <span
+                className="absolute left-10 font-black text-3xl text-light-blue-manual tracking-tight"
+              >
+                1
+              </span>
+              <div
+                dangerouslySetInnerHTML={
+                  {
+                    "__html": "<img alt="Temples" src="https://s3-eu-west-1.amazonaws.com/manualco/questions/temples-hairloss.png" srcset="https://s3-eu-west-1.amazonaws.com/manualco/questions/temples-hairloss%402x.png 2x" />",
+                  }
+                }
+              />
+            </div>
+          </button>
+          <button
+            className="
+                      flex justify-center items-center w-full p-4 border border-gray-200 rounded-lg
+                      text-dark-green-manual hover:bg-sage-green-manual hover:border-dark-green-manual transition-all duration-300
+                    "
+            onClick={[Function]}
+          >
+            <div
+              className="flex flex-row"
+            >
+              <span
+                className="absolute left-10 font-black text-3xl text-light-blue-manual tracking-tight"
+              >
+                2
+              </span>
+              <div
+                dangerouslySetInnerHTML={
+                  {
+                    "__html": "<img alt="Temples & Crown" src="https://s3-eu-west-1.amazonaws.com/manualco/questions/templescrown-hairloss.png" srcset="https://s3-eu-west-1.amazonaws.com/manualco/questions/templescrown-hairloss%402x.png 2x"/>",
+                  }
+                }
+              />
+            </div>
+          </button>
+          <button
+            className="
+                      flex justify-center items-center w-full p-4 border border-gray-200 rounded-lg
+                      text-dark-green-manual hover:bg-sage-green-manual hover:border-dark-green-manual transition-all duration-300
+                    "
+            onClick={[Function]}
+          >
+            <div
+              className="flex flex-row"
+            >
+              <span
+                className="absolute left-10 font-black text-3xl text-light-blue-manual tracking-tight"
+              >
+                3
+              </span>
+              <div
+                dangerouslySetInnerHTML={
+                  {
+                    "__html": "<img alt="Patchy" src="https://s3-eu-west-1.amazonaws.com/manualco/questions/patchy-hairloss.png" srcset="https://s3-eu-west-1.amazonaws.com/manualco/questions/patchy-hairloss%402x.png 2x"/>",
+                  }
+                }
+              />
+            </div>
+          </button>
+          <button
+            className="
+                      flex justify-center items-center w-full p-4 border border-gray-200 rounded-lg
+                      text-dark-green-manual hover:bg-sage-green-manual hover:border-dark-green-manual transition-all duration-300
+                    "
+            onClick={[Function]}
+          >
+            <div
+              className="flex flex-row"
+            >
+              <span
+                className="absolute left-10 font-black text-3xl text-light-blue-manual tracking-tight"
+              >
+                4
+              </span>
+              <div
+                dangerouslySetInnerHTML={
+                  {
+                    "__html": "<img alt="Moderate" src="https://s3-eu-west-1.amazonaws.com/manualco/questions/moderate-hairloss.png" srcset="https://s3-eu-west-1.amazonaws.com/manualco/questions/moderate-hairloss%402x.png 2x" />",
+                  }
+                }
+              />
+            </div>
+          </button>
+          <button
+            className="
+                      flex justify-center items-center w-full p-4 border border-gray-200 rounded-lg
+                      text-dark-green-manual hover:bg-sage-green-manual hover:border-dark-green-manual transition-all duration-300
+                    "
+            onClick={[Function]}
+          >
+            <div
+              className="flex flex-row"
+            >
+              <span
+                className="absolute left-10 font-black text-3xl text-light-blue-manual tracking-tight"
+              >
+                5
+              </span>
+              <div
+                dangerouslySetInnerHTML={
+                  {
+                    "__html": "<img alt="Extensive" src="https://s3-eu-west-1.amazonaws.com/manualco/questions/extensive-hairloss.png" srcset="https://s3-eu-west-1.amazonaws.com/manualco/questions/extensive-hairloss%402x.png 2x"/>",
+                  }
+                }
+              />
+            </div>
+          </button>
+          <button
+            className="
+                      flex justify-center items-center w-full p-4 border border-gray-200 rounded-lg
+                      text-dark-green-manual hover:bg-sage-green-manual hover:border-dark-green-manual transition-all duration-300
+                    "
+            onClick={[Function]}
+          >
+            <div
+              className="flex flex-row"
+            >
+              <span
+                className="absolute left-10 font-black text-3xl text-light-blue-manual tracking-tight"
+              >
+                6
+              </span>
+              <div
+                dangerouslySetInnerHTML={
+                  {
+                    "__html": "<img alt="Complete" src="https://s3-eu-west-1.amazonaws.com/manualco/questions/complete-hairloss.png" srcset="https://s3-eu-west-1.amazonaws.com/manualco/questions/complete-hairloss%402x.png 2x" />",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="bg-gray-100 px-6 py-4 flex flex-col justify-between items-start"
+    >
+      <div
+        className="text-sm text-dark-green-manual/80"
+      >
+        Question 
+        <strong>
+          1
+        </strong>
+         of 
+        3
+      </div>
+    </div>
+  </dialog>
+</div>
+`;
