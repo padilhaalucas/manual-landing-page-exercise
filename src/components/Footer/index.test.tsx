@@ -1,14 +1,12 @@
-import Image from 'next/image'
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer'
 import Footer from './index';
 
-// Mock the Image component from next/image
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {
-    return <Image {...props} alt="test-img-footer" />
+    return <img {...props} />
   },
 }));
 
@@ -65,7 +63,7 @@ describe('Components/Footer', () => {
 
   it('should render the correct number of list items', () => {
     const listItems = screen.getAllByRole('listitem');
-    expect(listItems).toHaveLength(11); // 4 + 4 + 3
+    expect(listItems).toHaveLength(11); //
   });
 
   it('should render the correct number of social media links', () => {

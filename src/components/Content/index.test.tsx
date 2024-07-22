@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
@@ -7,7 +6,7 @@ import Content from './index';
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {
-    return <Image {...props} alt="test-img-content" />
+    return <img {...props} />
   },
 }));
 

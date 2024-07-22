@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react';
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import renderer from 'react-test-renderer';
@@ -11,7 +10,7 @@ import { QuizData } from '@/types/quiz';
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {
-    return <Image {...props} alt="test-img-quiz" />
+    return <img {...props} />
   },
 }));
 
@@ -239,7 +238,7 @@ describe('Components/Quiz', () => {
   it('should handle non-image options', () => {
     const customContextValue = {
       ...mockQuizContextValue,
-      currentQuestion: 1, // Assuming the second question has non-image options
+      currentQuestion: 1,
     };
 
     renderWithQuizProvider(<Quiz />, customContextValue);
@@ -256,10 +255,10 @@ describe('Components/Quiz', () => {
 
     renderWithQuizProvider(<Quiz />, customContextValue);
 
-    const quizContainer = screen.getByTestId('quiz-container'); // Using data-testid
+    const quizContainer = screen.getByTestId('quiz-container');
     expect(quizContainer).toHaveClass('visible', 'bg-black', 'bg-opacity-50');
 
-    const modal = screen.getByTestId('quiz-modal'); // Using data-testid
+    const modal = screen.getByTestId('quiz-modal');
     expect(modal).toHaveClass('opacity-100', 'scale-100', 'translate-y-0');
   });
 
@@ -271,10 +270,10 @@ describe('Components/Quiz', () => {
 
     renderWithQuizProvider(<Quiz />, customContextValue);
 
-    const quizContainer = screen.getByTestId('quiz-container'); // Using data-testid
+    const quizContainer = screen.getByTestId('quiz-container');
     expect(quizContainer).toHaveClass('invisible', 'bg-black', 'bg-opacity-0');
 
-    const modal = screen.getByTestId('quiz-modal'); // Using data-testid
+    const modal = screen.getByTestId('quiz-modal');
     expect(modal).toHaveClass('opacity-0', 'scale-95', 'translate-y-8');
   });
 
@@ -303,7 +302,6 @@ describe('Components/Quiz', () => {
   });
 
   it('should apply correct classes for quiz completion transition', () => {
-    // Setup initial context with quizCompleted true
     const customContextValue = {
       ...mockQuizContextValue,
       quizCompleted: true,
@@ -311,11 +309,9 @@ describe('Components/Quiz', () => {
 
     const { rerender } = renderWithQuizProvider(<Quiz />, customContextValue);
 
-    // Check the element classes when quizCompleted is true
     let completionElement = screen.getByText('Great news!').parentElement;
     expect(completionElement).toHaveClass('opacity-100', 'translate-y-0');
 
-    // Update the context to quizCompleted false
     customContextValue.quizCompleted = true;
     rerender(
       <QuizProvider initialData={mockQuizData}>
@@ -325,7 +321,6 @@ describe('Components/Quiz', () => {
       </QuizProvider>
     );
 
-    // Ensure we target the right parent element for transition check
     completionElement = screen.getByTestId('quiz-transition-element');
     expect(completionElement).toHaveClass('opacity-100', 'translate-y-0');
   });

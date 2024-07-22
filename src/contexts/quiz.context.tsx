@@ -32,8 +32,6 @@ export const QuizProvider: React.FC<{ children: ReactNode; initialData: QuizData
     return option?.isRejection;
   });
 
-  console.log(quizData, 'QUIZ DATA')
-
   return (
     <QuizContext.Provider
       value={{

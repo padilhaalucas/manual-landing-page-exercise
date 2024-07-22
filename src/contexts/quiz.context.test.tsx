@@ -4,7 +4,6 @@ import { renderHook } from '@testing-library/react-hooks';
 import { QuizProvider, useQuiz } from './quiz.context';
 import { QuizData } from '@/types/quiz';
 
-// Mock quiz data
 const mockQuizData: QuizData = {
   questions: [
     {
