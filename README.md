@@ -33,18 +33,12 @@ The project directory structure is as follows:
     │    ├── mocked-data-source
     │    │    └── quiz.json
     │    ├── pages
-    │    │    ├── api
-    │    │    │   ├── quiz-data.test.ts
-    │    │    │   └── quiz-data.ts
     │    │    ├── _app.tsx
     │    │    └── index.tsx
     │    ├── styles
     │    │    └── globals.css
-    │    ├── types
-    │    │    └── quiz.ts
-    │    └── utils
-    │        ├── api.test.ts
-    │        └── api.ts
+    │    └── types
+    │         └── quiz.ts
     ├── .env
     ├── .eslintrc.json
     ├── .gitignore

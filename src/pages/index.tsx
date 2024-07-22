@@ -5,7 +5,7 @@ import Banner from '@/components/Banner';
 import Content from '@/components/Content';
 import Footer from '@/components/Footer';
 import Quiz from '@/components/Quiz';
-import { fetchQuizData } from '@/utils/api';
+import quizData from '@/mocked-data-source/quiz.json'
 import { QuizData } from '@/types/quiz';
 
 interface HomeProps {
@@ -27,10 +27,9 @@ export default function Home({ quizData }: HomeProps) {
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
   try {
-    const quizData = await fetchQuizData();
     return { props: { quizData } };
   } catch (error) {
-    console.error('Failed to fetch quiz data:', error);
+    console.error('Failed to get quiz data:', error);
     return { notFound: true };
   }
 };
