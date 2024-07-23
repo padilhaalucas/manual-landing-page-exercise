@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Footer should match snapshot 1`] = `
+<footer
+  className="bg-sage-green-manual w-full pt-14 px-16 lg:px-4"
+>
+  <div
+    className="max-w-6xl mx-auto"
+  >
+    <div
+      className="flex flex-col md:flex-row justify-between items-center gap-6 md:items-start mb-12"
+    >
+      <div
+        className="mb-8 md:mb-0"
+      >
+        <img
+          alt="Manual logo"
+          height={40}
+          src="/assets/logo.svg"
+          width={40}
+        />
+      </div>
+      <div
+        className="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-16"
+      >
+        <div
+          className="text-dark-green-manual"
+        >
+          <h5
+            className="font-semibold tracking-widest text-sm mb-4"
+          >
+            PRODUCT
+          </h5>
+          <ul
+            className="space-y-2 text-sm"
+          >
+            <li
+              className="py-2"
+            >
+              Popular
+            </li>
+            <li
+              className="py-2"
+            >
+              Trending
+            </li>
+            <li
+              className="py-2"
+            >
+              Guided
+            </li>
+            <li
+              className="py-2"
+            >
+              Products
+            </li>
+          </ul>
+        </div>
+        <div
+          className="text-dark-green-manual"
+        >
+          <h5
+            className="font-semibold tracking-widest text-sm mb-4"
+          >
+            COMPANY
+          </h5>
+          <ul
+            className="space-y-2 text-sm"
+          >
+            <li
+              className="py-2"
+            >
+              Press
+            </li>
+            <li
+              className="py-2"
+            >
+              Mission
+            </li>
+            <li
+              className="py-2"
+            >
+              Strategy
+            </li>
+            <li
+              className="py-2"
+            >
+              About
+            </li>
+          </ul>
+        </div>
+        <div
+          className="text-dark-green-manual"
+        >
+          <h5
+            className="font-semibold tracking-widest text-sm mb-4"
+          >
+            INFO
+          </h5>
+          <ul
+            className="space-y-2 text-sm"
+          >
+            <li
+              className="py-2"
+            >
+              Support
+            </li>
+            <li
+              className="py-2"
+            >
+              Customer Service
+            </li>
+            <li
+              className="py-2"
+            >
+              Get started
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            className="font-semibold text-dark-green-manual tracking-widest text-sm mb-4"
+          >
+            FOLLOW US
+          </h5>
+          <div
+            className="flex space-x-4 py-2"
+          >
+            <a
+              aria-label="Facebook"
+              href="#"
+            >
+              <img
+                alt="Facebook"
+                height={24}
+                src="/assets/facebook.svg"
+                width={24}
+              />
+            </a>
+            <a
+              aria-label="Google"
+              href="#"
+            >
+              <img
+                alt="Google"
+                height={24}
+                src="/assets/google.svg"
+                width={24}
+              />
+            </a>
+            <a
+              aria-label="Twitter"
+              href="#"
+            >
+              <img
+                alt="Twitter"
+                height={24}
+                src="/assets/twitter.svg"
+                width={24}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="border-t border-dark-green/20 text-center items-center h-16 flex justify-center text-sm text-dark-green-manual/80"
+    >
+      <span>
+        © 2021 Manual. All rights reserved
+      </span>
+    </div>
+  </div>
+</footer>
+`;
