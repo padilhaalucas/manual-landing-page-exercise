@@ -89,6 +89,7 @@ ___
 `pnpm dev`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Or, you can see a deployed version [here](https://manual-landing-page-assessment.vercel.app/) 
 ___
 ## 🧪 Tests
 1. To run the test suite <br />
